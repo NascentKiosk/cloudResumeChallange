@@ -1,27 +1,25 @@
-# cloudResumeChallange
-## Cloud Resume Challenge built on Microsoft Azure using serverless architecture, CI/CD, and Infrastructure as Code.
 
-# ☁️ Cloud Resume Challenge – Azure
+# Cloud Resume Challenge – Azure
 
 A fully automated cloud-based resume website built on Microsoft Azure using serverless technologies, Infrastructure as Code, and CI/CD practices.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project showcases the end-to-end development and deployment of a cloud-native application. It combines frontend development, backend APIs, database integration, automated deployments, and infrastructure provisioning to demonstrate practical cloud engineering skills.
 
 The application consists of:
 
-- 🌐 A static resume website
-- ⚙️ A serverless API for tracking visitors
-- 🗄️ A database that stores the visitor count
-- 🚀 A CI/CD pipeline for automated deployments
-- 📦 Infrastructure as Code for repeatable Azure provisioning
+-  A static resume website
+-  A serverless API for tracking visitors
+-  A database that stores the visitor count
+-  A CI/CD pipeline for automated deployments
+-  Infrastructure as Code for repeatable Azure provisioning
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```text
 User visits website
@@ -47,7 +45,7 @@ User visits website
 
 ---
 
-## 🔄 Application Flow
+## Application Flow
 
 ```text
 User visits the resume website
@@ -65,7 +63,7 @@ The website displays the latest visitor count
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Frontend
 - HTML5
@@ -95,7 +93,7 @@ The website displays the latest visitor count
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```text
 cloud-resume/
@@ -128,7 +126,7 @@ cloud-resume/
 
 ---
 
-## ⚙️ Azure Services Used
+## Azure Services Used
 
 | Service | Purpose |
 |----------|----------|
@@ -140,7 +138,7 @@ cloud-resume/
 
 ---
 
-## 🗄️ Cosmos DB Design
+## Cosmos DB Design
 
 ### Database
 
@@ -171,7 +169,7 @@ visitor-count
 
 ---
 
-## 🚀 CI/CD Pipeline
+## CI/CD Pipeline
 
 This project uses GitHub Actions to automate deployments.
 
@@ -245,7 +243,7 @@ Deploy Infrastructure
 
 ---
 
-## 🔐 Security Considerations
+## Security Considerations
 
 This project follows several cloud security best practices:
 
@@ -257,7 +255,7 @@ This project follows several cloud security best practices:
 
 ---
 
-## 📈 Future Improvements
+## Future Improvements
 
 Potential enhancements include:
 
@@ -271,7 +269,7 @@ Potential enhancements include:
 
 ---
 
-## 🎯 Skills Demonstrated
+## Skills Demonstrated
 
 Through this project, I demonstrate experience with:
 
@@ -289,7 +287,7 @@ Through this project, I demonstrate experience with:
 
 ---
 
-## 📬 Contact
+## Contact
 
 If you'd like to connect or discuss this project, feel free to reach out through the contact information provided on the resume website.
 
