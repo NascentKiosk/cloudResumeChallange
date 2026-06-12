@@ -25,3 +25,8 @@ jobs:
               --destination '$web' \
               --source frontend \
               --overwrite true
+
+
+      - name: Verify storage account name
+        run: |
+          echo "Storage account: >${{ secrets.AZURE_STORAGE_ACCOUNT }}<"
