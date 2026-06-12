@@ -3,38 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timothy Juma CV</title>
+    <title>Timothy Juma</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="cv-container">
+<div class="page">
 
     <header>
         <h1>TIMOTHY JUMA</h1>
 
-        <div class="divider"></div>
-
-        <div class="contact-info">
+        <div class="contact">
             <span>+46729496871</span>
             <span>|</span>
-            <span>timothyjuma.dev@gmail.com</span>
+
+            <a href="mailto:timothyjuma.dev@gmail.com">
+                timothyjuma.dev@gmail.com
+            </a>
+
             <span>|</span>
-            <a href="#">linkedin</a>
+
+            <a href="#">LinkedIn</a>
+
             <span>|</span>
-            <a href="#">Github</a>
+
+            <a href="#">GitHub</a>
+
             <span>|</span>
+
             <span>Malmö</span>
         </div>
     </header>
 
     <section>
         <h2>PROFIL</h2>
+
         <p>
             Engagerad och lösningsorienterad IT-tekniker med erfarenhet inom DevOps,
             automation och teknisk support. Har kunskaper inom Azure, nätverk och Linux
-            samt ett stort intresse för molntjänster och IT-infrastruktur, felsökning och
-            att snabbt sätta mig in i nya tekniska miljöer.
+            samt ett stort intresse för molntjänster och IT-infrastruktur, felsökning
+            och att snabbt sätta mig in i nya tekniska miljöer.
         </p>
     </section>
 
@@ -42,7 +50,10 @@
         <h2>UTBILDNING</h2>
 
         <p class="education">
-            <strong>Datasystemutvecklingsprogrammet</strong> – Högskolan Kristianstad (juni 2028)
+            <span class="semi-bold">
+                Datasystemutvecklingsprogrammet
+            </span>
+             – Högskolan Kristianstad(Juni 2028)
         </p>
     </section>
 
@@ -50,9 +61,26 @@
         <h2>CERTIFIERINGAR</h2>
 
         <ul>
-            <li>Microsoft Certified: <strong>Azure Administrator Associate (AZ-104), 2024</strong></li>
-            <li>Microsoft Certified: <strong>Azure AI Engineer Associate (AI-102), 2025</strong></li>
-            <li>Microsoft Certified: <strong>Azure Network Engineer Associate (AZ-700) - Pågående</strong></li>
+            <li>
+                Microsoft Certified:
+                <span class="semi-bold">
+                    Azure Administrator Associate (AZ-104)
+                </span>, 2024
+            </li>
+
+            <li>
+                Microsoft Certified:
+                <span class="semi-bold">
+                    Azure AI Engineer Associate (AI-102)
+                </span>, 2025
+            </li>
+
+            <li>
+                Microsoft Certified:
+                <span class="semi-bold">
+                    Azure Network Engineer Associate (AZ-700)
+                </span> – Pågående
+            </li>
         </ul>
     </section>
 
@@ -60,10 +88,14 @@
         <h2>ERFARENHET</h2>
 
         <div class="job">
-            <h3>
-                Sitevision Developer - API Integrations & Automation |
-                <span>B3 Connect, Linköping | April 2024 – Dec 2024</span>
-            </h3>
+            <p>
+                <span class="semi-bold">
+                    Sitevision Developer – API Integrations & Automation
+                </span>
+                |
+                B3 Connect, Linköping |
+                April 2024 – Dec 2024
+            </p>
 
             <ul>
                 <li>Arbetade med felsökning och utveckling av API-integrationer.</li>
@@ -74,10 +106,14 @@
         </div>
 
         <div class="job">
-            <h3>
-                DevOps Engineer Intern |
-                <span>SMHI, Norrköping | Aug 2023 – Mar 2024</span>
-            </h3>
+            <p>
+                <span class="semi-bold">
+                    DevOps Engineer Intern
+                </span>
+                |
+                SMHI, Norrköping |
+                Aug 2023 – Mar 2024
+            </p>
 
             <ul>
                 <li>Bidrog till driftnära arbete och förbättring av digitala plattformar.</li>
@@ -87,16 +123,34 @@
         </div>
     </section>
 
-    <section>
+    <section class="skills">
         <h2>TEKNISKA KUNSKAPER</h2>
 
-        <div class="skills">
-            <p><strong>Moln & Infrastruktur:</strong> Azure, Docker, Kubernetes, CI/CD</p>
-            <p><strong>Nätverk:</strong> TCP/IP, DNS, VPN, Subnetting och IP-adressering, Routing och switching</p>
-            <p><strong>Operativsystem:</strong> Linux, Grundläggande kunskaper i Windows-miljöer</p>
-            <p><strong>Verktyg:</strong> Git, Linux, VS Code, IntelliJ, Jupyter</p>
-            <p><strong>Programmering:</strong> Python, Bash, Java, JavaScript</p>
-        </div>
+        <p>
+            <span class="semi-bold">Moln & Infrastruktur:</span>
+            Azure, Docker, Kubernetes, CI/CD
+        </p>
+
+        <p>
+            <span class="semi-bold">Nätverk:</span>
+            TCP/IP, DNS, VPN, Subnetting och IP-adressering,
+            Routing och switching
+        </p>
+
+        <p>
+            <span class="semi-bold">Operativsystem:</span>
+            Linux, Grundläggande kunskaper i Windows-miljöer
+        </p>
+
+        <p>
+            <span class="semi-bold">Verktyg:</span>
+            Git, Linux, VS Code, IntelliJ, Jupyter
+        </p>
+
+        <p>
+            <span class="semi-bold">Programmering:</span>
+            Python, Bash, Java, JavaScript
+        </p>
     </section>
 
     <section>
@@ -111,12 +165,18 @@
 
     <section>
         <h2>KÖRKORT</h2>
+
         <p>Kategori B - Manual</p>
     </section>
+    <div class="visitor-counter">
+        Visitor Count: <span id="counter">0</span>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div class="footer-bar"></div>
 
 </div>
-
-<div class="bottom-bar"></div>
 
 </body>
 </html>
