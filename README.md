@@ -57,6 +57,16 @@ This diagram illustrates how a visitor request flows through the application and
 </p>
 ---
 
+## Repository Structure
+
+```text
+.
+├── frontend/          # Static website files
+├── backend/           # Azure Function and tests
+├── images/            # Diagrams and screenshots
+└── .github/workflows/ # CI/CD pipelines
+```
+
 ## Technologies Used
 
 ### Frontend
