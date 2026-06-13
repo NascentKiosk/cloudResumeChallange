@@ -3,8 +3,13 @@
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI/CD-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-# Cloud Resume Challenge – Azure
-Serverless resume website built on Azure using Python, Azure Functions, Cosmos DB, GitHub Actions, and Azure Storage Static Websites. Built using an Azure for Students subscription.
+# Cloud Resume Challenge (Azure)
+Personal Project
+- Built and deployed a serverless resume website on Microsoft Azure using Python, Azure Functions, Cosmos DB, Azure Storage Static Websites, and GitHub Actions.
+- Developed a visitor counter API and integrated it with a static frontend hosted in Azure.
+- Implemented CI/CD pipelines to automate testing and deployment of frontend and backend components.
+- Utilized Azure services including Storage Accounts, Functions, networking, and identity to build and operate the solution end-to-end.
+- Designed and managed the project within the constraints of an Azure for Students subscription, optimizing resource usage and costs.
 
 ---
 
