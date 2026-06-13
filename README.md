@@ -41,6 +41,8 @@ User visits website
 │ Azure Cosmos DB         │
 │ Visitor Count Storage   │
 └─────────────────────────┘
+
+![alt text](images/architecture.png)
 ```
 
 ---
