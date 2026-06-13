@@ -1,7 +1,11 @@
+![Azure](https://img.shields.io/badge/Azure-Cloud-blue)
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI/CD-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
 # Cloud Resume Challenge – Azure
-
-A fully automated cloud-based resume website built on Microsoft Azure using serverless technologies, Infrastructure as Code, and CI/CD practices.
+A complete implementation of the Cloud Resume Challenge on Azure using a serverless architecture, Infrastructure as Code, automated testing, and CI/CD pipelines.
+IBuilt using an Azure for Students subscription, with deployment workflows adapted to work within Microsoft Entra ID limitations.
 
 ---
 
@@ -19,14 +23,14 @@ The application consists of:
 
 ---
 
-## Architecture
+## Architecture Diagram
+This diagram provides an overview of the Azure services and deployment workflows used to build and automate the solution.
 <p align="center">
   <img src="images/architecture.png"
        alt="Cloud Resume Challenge Azure Architecture"
        width="1000">
 </p>
 
----
 
 ## Application Flow
 
@@ -45,8 +49,7 @@ The website displays the latest visitor count
 ```
 ## Sequence Diagram
 
-The sequence diagram below shows and expands further what happens in the Application flow when a visitor accesses the website and the visitor counter is updated through the backend API.
-
+This diagram illustrates how a visitor request flows through the application and how the visitor counter is updated.
 <p align="center">
   <img src="images/sequencediagram.png"
        alt="Cloud Resume Challenge Azure Sequence Diagram"
@@ -145,6 +148,15 @@ Run Tests
     ↓
 Deploy Azure Function
 ```
+## Azure for Students Challenges
+
+The Azure for Students subscription restricted Microsoft Entra ID permissions required for Service Principals and OIDC authentication.
+To maintain automated deployments:
+- Backend deployments use an Azure Function publish profile stored as a GitHub Secret.
+- Frontend deployments authenticate using Azure Storage Account Access Keys.
+- No credentials are committed to source control.</br>
+
+This experience reinforced the importance of adapting solutions to real-world constraints while maintaining secure and automated workflows.
 
 ---
 
