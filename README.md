@@ -20,30 +20,11 @@ The application consists of:
 ---
 
 ## Architecture
-
-```text
-User visits website
-        │
-        ▼
-┌─────────────────────────┐
-│ Azure Static Web Apps   │
-│ Resume Frontend         │
-└──────────┬──────────────┘
-           │ HTTPS Request
-           ▼
-┌─────────────────────────┐
-│ Azure Functions         │
-│ Visitor Counter API     │
-└──────────┬──────────────┘
-           │ Azure SDK
-           ▼
-┌─────────────────────────┐
-│ Azure Cosmos DB         │
-│ Visitor Count Storage   │
-└─────────────────────────┘
-
-![alt text](images/architecture.png)
-```
+<p align="center">
+  <img src="images/architecture.png"
+       alt="Cloud Resume Challenge Azure Architecture"
+       width="1000">
+</p>
 
 ---
 
@@ -62,7 +43,15 @@ The updated visitor count is returned to the frontend
         ↓
 The website displays the latest visitor count
 ```
+## Sequence Diagram
 
+The sequence diagram below shows and expands further what happens in the Application flow when a visitor accesses the website and the visitor counter is updated through the backend API.
+
+<p align="center">
+  <img src="images/sequencediagram.png"
+       alt="Cloud Resume Challenge Azure Sequence Diagram"
+       width="1000">
+</p>
 ---
 
 ## Technologies Used
@@ -94,40 +83,6 @@ The website displays the latest visitor count
 - GitHub
 
 ---
-
-##  Repository Structure
-
-```text
-cloud-resume/
-│
-├── frontend/
-│   ├── index.html
-│   ├── styles.css
-│   ├── script.js
-│   └── assets/
-│
-├── api/
-│   ├── visitor-counter/
-│   ├── package.json
-│   └── ...
-│
-├── infra/
-│   ├── main.tf
-│   ├── variables.tf
-│   ├── outputs.tf
-│   └── providers.tf
-│
-├── .github/
-│   └── workflows/
-│       ├── frontend.yml
-│       ├── api.yml
-│       └── infra.yml
-│
-└── README.md
-```
-
----
-
 ## Azure Services Used
 
 | Service | Purpose |
@@ -147,30 +102,6 @@ cloud-resume/
 ```text
 resume-db
 ```
-
-### Container
-
-```text
-visitor-count
-```
-
-### Document Structure
-
-```json
-{
-    "id": "homepage",
-    "count": 0
-}
-```
-
-### Partition Key
-
-```text
-/id
-```
-
----
-
 ## CI/CD Pipeline
 
 This project uses GitHub Actions to automate deployments.
@@ -213,34 +144,6 @@ Install Dependencies
 Run Tests
     ↓
 Deploy Azure Function
-```
-
----
-
-### Infrastructure Deployment
-
-Triggered when changes are pushed to:
-
-```text
-infra/**
-```
-
-Workflow:
-
-```text
-Terraform Init
-    ↓
-Terraform Plan
-    ↓
-Terraform Apply
-```
-
-or
-
-```text
-Validate Bicep Templates
-    ↓
-Deploy Infrastructure
 ```
 
 ---
