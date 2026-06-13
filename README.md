@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 # Cloud Resume Challenge (Azure)
-Personal Project
+### Personal Project
 - Built and deployed a serverless resume website on Microsoft Azure using Python, Azure Functions, Cosmos DB, Azure Storage Static Websites, and GitHub Actions.
 - Developed a visitor counter API and integrated it with a static frontend hosted in Azure.
 - Implemented CI/CD pipelines to automate testing and deployment of frontend and backend components.
