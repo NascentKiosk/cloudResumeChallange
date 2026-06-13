@@ -58,6 +58,7 @@ This diagram illustrates how a visitor request flows through the application and
 - Azure Functions
 - Cosmos DB Table API
 - Python
+- pytest
 - JavaScript
 - GitHub Actions
 
